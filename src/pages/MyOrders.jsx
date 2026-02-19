@@ -61,6 +61,7 @@ function MyOrders() {
                 </div>
 
                 <div className="bg-white rounded-xl shadow overflow-hidden">
+                    <div className="overflow-x-auto">
                     <table className="w-full text-sm">
                         <thead className="bg-gray-100 text-gray-600 uppercase text-xs">
                             <tr>
@@ -123,6 +124,7 @@ function MyOrders() {
                             )}
                         </tbody>
                     </table>
+                    </div>
                 </div>
             </div>
 
