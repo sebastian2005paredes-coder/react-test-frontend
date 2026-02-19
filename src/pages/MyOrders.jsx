@@ -112,8 +112,9 @@ function MyOrders() {
                                                 Edit
                                             </button>
                                             <button
+                                                disabled={order.status === "Completed"}
                                                 onClick={() => setConfirmModal({ open: true, orderId: order.id })}
-                                                className="bg-red-500 text-white px-3 py-1 rounded hover:bg-red-600 text-xs"
+                                                className="bg-red-500 text-white px-3 py-1 rounded hover:bg-red-600 disabled:opacity-40 disabled:cursor-not-allowed text-xs"
                                             >
                                                 Delete
                                             </button>
